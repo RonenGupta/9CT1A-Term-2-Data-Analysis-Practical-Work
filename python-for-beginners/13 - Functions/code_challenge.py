@@ -21,6 +21,5 @@ print('Adding 6 + 4 = ' + str(calculator(6,4,'add')))
 # Should return 2
 print('Subtracting 6 - 4 = ' + str(calculator(6,4,'subtract')))
 # BONUS: Test your function with the values 6, 4 and divide 
-print('Dividing 6/4 = ' + str(calculator(6,4,'divide')))
 # Have your function return an error message when invalid values are received
-
+print('Dividing 6/4 = ' + str(calculator(6,4,'divide')))
