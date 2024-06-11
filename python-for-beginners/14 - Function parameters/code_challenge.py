@@ -5,12 +5,23 @@
 # operation: the word 'add' or 'subtract'. The default operation is 'add'
 # the function should return the result of the two numbers added or subtracted
 # based on the value passed in for the operator
-#
+
+def calculator(first_number, second_number, operation='ADD'):
+    if operation.upper() == ("ADD"):
+     return(float(first_number)) + (float(second_number))
+    elif operation.upper() == ("SUBTRACT"):
+       return(float(first_number)) - (float(second_number))
+    else:
+       return("Invalid operation, enter Add or Subtract")
+
+
 # Test your function using named notation passing in only the numbers 6 and 4
 # Should return 10
-#
+print('Adding 6 + 4 = ' + str(calculator(first_number=6, second_number=4)))
 # Test your function using named notation with the values 6,4, subtract 
 # Should return 2
-# 
+print('Subtracting 6 - 4 = ' + str(calculator(first_number=6, second_number=4, operation='SUBTRACT')))
 # BONUS: Test your function with the values 6, 4 and divide 
+print('Dividing 6 / 4 = ' + str(calculator(first_number=6, second_number=4, operation='DIVIDE')))
 # Have your function return an error message when invalid values are received
+print('Dividing 6 / 4 = ' + str(calculator(first_number=6, second_number=4, operation='DIVIDE')))

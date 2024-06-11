@@ -7,10 +7,10 @@
 # based on the value passed in for the operator
 #
 def calculator(first_number, second_number, operation='ADD'):
-    if operation.upper() == 'ADD':
-        return(float(first_number) + float(second_number))
-    elif operation.upper() =='SUBTRACT':
-        return(float(first_number) - float(second_number))
+    if operation.upper() == ('ADD'):
+        return(float(first_number)) + (float(second_number))
+    elif operation.upper() == ('SUBTRACT'):
+        return(float(first_number)) - (float(second_number))
     else:
         return('Invalid operation please specify ADD or SUBTRACT')
 
